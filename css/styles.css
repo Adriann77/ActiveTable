@@ -16,13 +16,7 @@ body {
   flex-direction: column;
 }
 
-.upper {
-  display: flex;
-  justify-content: space-around;
-  width: 60%;
-  margin-bottom: 2rem;
-}
-.upper button {
+button {
   padding: 2rem 3rem;
   cursor: pointer;
   border-radius: 8px;
@@ -30,8 +24,15 @@ body {
   transition: transform 0.3s, background-color 0.3s, color 0.3s;
   border: none;
 }
-.upper button:hover {
+button:hover {
   transform: scale(0.95);
+}
+
+.upper {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-bottom: 2rem;
 }
 .upper .red {
   background-color: red;
@@ -82,4 +83,17 @@ body {
   padding: 3px;
   margin: 1px;
   cursor: pointer;
+}
+
+.speed {
+  margin-bottom: 2rem;
+}
+.speed button {
+  padding: 1rem 3rem;
+}
+.speed .fast {
+  background-color: greenyellow;
+}
+.speed .slow {
+  background-color: goldenrod;
 }/*# sourceMappingURL=styles.css.map */

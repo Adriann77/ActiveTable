@@ -16,24 +16,24 @@ body {
 	flex-direction: column;
 }
 
+button {
+    padding: 2rem 3rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    border: none;
+
+    &:hover {
+        transform: scale(0.95);
+    }
+}
 .upper {
 	display: flex;
 	justify-content: space-around;
 	width: 60%;
 	margin-bottom: 2rem;
 
-	button {
-		padding: 2rem 3rem;
-		cursor: pointer;
-		border-radius: 8px;
-		font-size: 1.5rem;
-		transition: transform 0.3s, background-color 0.3s, color 0.3s;
-		border: none;
-
-		&:hover {
-			transform: scale(0.95);
-		}
-	}
 	.red {
 		background-color: red;
 	}
@@ -88,4 +88,21 @@ body {
 
 		cursor: pointer;
 	}
+}
+
+.speed{
+  
+    button{
+        padding: 1rem 3rem;
+    }
+    margin-bottom: 2rem;
+
+    .fast{
+        background-color: greenyellow;
+    }
+
+    .slow{
+        background-color: goldenrod;
+    }
+    
 }

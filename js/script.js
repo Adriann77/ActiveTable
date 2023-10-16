@@ -6,12 +6,7 @@ const mixBtn = document.querySelector('.mix');
 const colorBtns = document.querySelectorAll('.colorBtn');
 const saturation = document.querySelector('.slider');
 const saturationVal = document.querySelector('.saturationValue');
-
-let redR;
-let redG;
-let redB;
-let choosedColor
-
+let currColor
 
 
 const fillBox = () => {
@@ -22,21 +17,26 @@ const fillBox = () => {
 	}
 };
 
+colorBtns.forEach(el => el.addEventListener('click', ()=>{
+    currColor = el
+}))
+
 fillBox();
 
-
-const generateRandColor = () => {
-
+const generateColor = params => {
     let x = Math.floor(Math.random()*225 + 30)
-    choosedColor = `rgb(${x},0,0, .${(saturation.value)})`
-
-}
-
-
-
+	
+    switch(currColor.textContent){
+        case 'Red':
+            console.log('tak');
+            choosedColor = `rgb(${x},0,0, .${saturation.value})`;
+        break;
+        }
+    
+};
 
 box.addEventListener('mousemove', e => {
-    generateRandColor()
+    generateColor()
 	e.target.classList.contains('square') ? (e.target.style.backgroundColor = `${choosedColor}`) : '';
 });
 saturation.oninput = function () {
