@@ -12,4 +12,74 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 16px;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-bottom: 2rem;
+}
+.upper button {
+  padding: 2rem 3rem;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+  border: none;
+}
+.upper button:hover {
+  transform: scale(0.95);
+}
+.upper .red {
+  background-color: red;
+}
+.upper .green {
+  background-color: limegreen;
+}
+.upper .blue {
+  background-color: royalblue;
+}
+.upper .mix {
+  background: linear-gradient(to right, #fc466b, #3f5efb);
+}
+
+.saturation {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(to right, #fc466b, #3f5efb);
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.box {
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.box .square {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 1px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
