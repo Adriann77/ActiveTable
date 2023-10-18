@@ -70,9 +70,8 @@ button {
 }
 
 .box {
-	width: 600px;
-	height: 600px;
-	border: 1px solid black;
+	max-width: 850px;
+
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -85,7 +84,8 @@ button {
 		border-radius: 3px;
 		padding: 3px;
 		margin: 1px;
-
+        transition-property: background-color;
+        transition-duration: .3s;
 		cursor: pointer;
 	}
 }
